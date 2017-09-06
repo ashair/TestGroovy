@@ -16,6 +16,7 @@ DetailedDiff myDiff = new DetailedDiff (diff);
 def groovyUtils=new  com.eviware.soapui.support.GroovyUtils(context)
 // Using the method projectPath you can get the project path which you are working
 def projectPath = groovyUtils.projectPath
+//Write Differences from both files to project path folder
 def fileOut = new File (projectPath+'/logOutput.log');
 //Convert myDiff to a string to write to a file. It keeps the formating as far as I can tell. 
 fileOut.write (myDiff.toString());
